@@ -1,2 +1,2 @@
-# netizenxsk.github.io
+# Netizen SK
 Netizen.sk web site repository
