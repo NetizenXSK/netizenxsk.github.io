@@ -8,59 +8,114 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     
     <script src="./bootstrap/js/bootstrap.js"></script>
+    <style>
+        .txt-theme{
+          color: #ffffff;
+        }
+        .bg-theme{
+          background-color: #191920;
+        }
+        body .cbg{
+          background-image: radial-gradient(#0099ff 1px, transparent 1px);
+          background-size: 20px 20px;
+          background-color: #191920;
+          background-position: center;
+        }
+        .border-theme{
+          border-color: #0099ff!important;
+          border-width: 1px!important;
+        }
+        .test{
+          display: flex;
+          height: 100vh;
+          width: 100vw;
+          position:absolute;
+          align-items: center;
+          justify-content: center;
+          background: #191920;;
+          opacity: 1;
+          animation: vanish 2s linear 1;
+          animation-fill-mode: forwards;
+  
+        }
+        section .test_dots span{
+          position: absolute;
+          height: 10px;
+          width: 10px;
+          background: #0099ff;
+          border-radius: 50%;
+          transform: rotate(calc(var(--i) * (360deg / 15))) translateY(35px);
+          animation: load 1.5s linear 1;
+          animation-delay: calc(var(--i) * 0.1s);
+          opacity: 0;
+          animation-fill-mode: forwards;
+        }
+        @keyframes load {
+          0%{
+          opacity: 1;
+          }
+          100%{
+          opacity: 1;
+          }
+        }
+        @keyframes vanish {
+          90%{
+            opacity:1;
+          }
+          95%{
+          opacity: 0;
+          }
+          100%{
+            opacity:0;
+            height: 100vh;
+            width: 100vw;
+          }
+        }
+    </style>
 </head>
-<body class="d-flex flex-column vh-100">
-  <div class="body-area container-fluid flex-fill">
+<body class="d-flex flex-column vh-100 cbg">
+  <section class="test">
+    <div class="test_dots">
+      <span style="--i:1;"></span>
+      <span style="--i:2;"></span>
+      <span style="--i:3;"></span>
+      <span style="--i:4;"></span>
+      <span style="--i:5;"></span>
+      <span style="--i:6;"></span>
+      <span style="--i:7;"></span>
+      <span style="--i:8;"></span>
+      <span style="--i:9;"></span>
+      <span style="--i:10;"></span>
+      <span style="--i:11;"></span>
+      <span style="--i:12;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:14;"></span>
+      <span style="--i:15;"></span>
+    </div>
+  </section>
+  <div class="body-area container-fluid flex-fill cbg txt-theme">
     <div class="container">
-      <div class="row m-1 bg-light rounded border border-secondary">
+      <div class="row border border-theme bg-theme m-1">
         <div class="col-12">
           <p class="text-center m-0 p-2">NETIZENXSK</p>
         </div>
       </div>
       <!--nav(?)-->
-      <div class="row border border-secondary bg-light rounded m-1">
+      <div class="row border border-theme bg-theme m-1">
         <div class="col-12">
           <p class="p-1 m-0 text-center">Heavy WIP - LAYOUT</p>
         </div>
       </div>
       <!--body actual-->
-      <div class="row border border-secondary bg-light rounded m-1">
-        <div class="col-3 border-end border-secondary">
-          <div class="row border-bottom border-secondary">
-            <p class="p-1 m-0">placeholder 1</p>
-          </div>
-          <div class="row border-bottom border-secondary">
-            <p class="p-1 m-0">placeholder 2</p>
-          </div>
-          <div class="row border-bottom border-secondary">
-            <p class="p-1 m-0">placeholder 3</p>
-          </div>
-          <div class="row border-bottom border-secondary">
-            <p class="p-1 m-0">placeholder 4</p>
-          </div>
-          <div class="row border-bottom border-secondary">
-            <p class="p-1 m-0">placeholder 5</p>
-          </div>
-          <div class="row border-bottom border-secondary">
-            <p class="p-1 m-0">placeholder 6</p>
-          </div>
-          <div class="row border-bottom border-secondary">
-            <p class="p-1 m-0">placeholder 7</p>
-          </div>
-          <div class="row border-bottom border-secondary">
-            <p class="p-1 m-0">placeholder 8</p>
-          </div>
-          <div class="row">
-            <p class="p-1 m-0">placeholder 9</p>
-          </div>
-        </div>
-        <div class="col-9">
+      <div class="row border border-theme bg-theme m-1">
+        <div class="col-sm-12">
+          
           <p class="m-0 p-1 text-left">
             Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.
           </p>
         </div>
       </div>
-      <div class="row border border-secondary bg-light rounded m-1">
+      <div class="row border border-theme bg-theme m-1">
         <div class="col-12">
           <p class="p-1 m-0 text-center">Heavy WIP - LAYOUT</p>
         </div>
