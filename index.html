@@ -20,6 +20,7 @@
           background-size: 20px 20px;
           background-color: #191920;
           background-position: center;
+
         }
         .border-theme{
           border-color: #0099ff!important;
@@ -34,7 +35,7 @@
           justify-content: center;
           background: #191920;;
           opacity: 1;
-          animation: vanish 2s linear 1;
+          animation: vanish 2s linear 1, vanishfrfr 2s;
           animation-fill-mode: forwards;
   
         }
@@ -67,13 +68,22 @@
           }
           100%{
             opacity:0;
+          }
+        }
+        @keyframes vanishfrfr {
+          0%{
             height: 100vh;
-            width: 100vw;
+          }
+          99%{
+            height: 100vh;
+          }
+          100%{
+            height: 0vh;
           }
         }
     </style>
 </head>
-<body class="d-flex flex-column vh-100 cbg">
+<body class="d-flex flex-column vh-100">
   <section class="test">
     <div class="test_dots">
       <span style="--i:1;"></span>
@@ -103,21 +113,25 @@
       <!--nav(?)-->
       <div class="row border border-theme bg-theme m-1">
         <div class="col-12">
-          <p class="p-1 m-0 text-center">Heavy WIP - LAYOUT</p>
+          <p class="p-1 m-0 text-center">WIP</p>
         </div>
       </div>
       <!--body actual-->
       <div class="row border border-theme bg-theme m-1">
-        <div class="col-sm-12">
-          
-          <p class="m-0 p-1 text-left">
-            Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.
-          </p>
+        <div class="col-sm-12 align-items-center justify-content-center">
+          <div class="text-center">
+            <figure class="figure">
+              <img src="https://cdn-icons-png.flaticon.com/512/10295/10295925.png" class="img-fluid mx-auto d-block">
+              <figcaption class="figure-caption">
+                <a class="font-monospace fw-light link-light link-offset-2 link-underline link-underline-opacity-0 link-opacity-50 link-opacity-100-hover" href="https://www.flaticon.com/free-icons/under-construction" title="under construction icons">Under construction icons created by Freepik - Flaticon</a>
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </div>
       <div class="row border border-theme bg-theme m-1">
         <div class="col-12">
-          <p class="p-1 m-0 text-center">Heavy WIP - LAYOUT</p>
+          <p class="p-1 m-0 text-center">WIP</p>
         </div>
       </div>
     </div>
